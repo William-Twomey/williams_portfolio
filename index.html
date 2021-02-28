@@ -4,7 +4,7 @@
     <!--Head Start -->
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
         <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
@@ -38,37 +38,88 @@
                 <img src="images/favicon_io/android-chrome-192x192.png" alt="logo">
                 <h1>Welcome to William Twomey's</h1>
                 <h1>Portfolio Website</h1>
+                <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+                    <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
+                    <br>field of battle and to command such unswervingly dutiful actors or troops.
+                </q>
+                <br> -Joseph Weizenbaum
+                <br>
+                <br> My name is William. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                <br>
+                <br> Thank you for stopping by and enjoy!
             </div>
         </div>
         <!-- Background Video End -->
         
         <!-- About Me Section Start -->
-        <div id="About" class="row">
-            <div class="column_1">
-                <img src="./images/image1.jpg" alt="black and white laptop">
-            </div>
+        <div class="container">
+            <div id="About">
+            <div class="row">
+                <div class="column_1">
+                    <img src="./images/image1.jpg" alt="black and white laptop">
+                </div>
                 
-            <div class="column_2">
-                <h2>About Me</h2>
-                <p>I'm currently working as a truck driver but looking to change careers and become a full stack software developer.<br>I'm currently training with The Tech Academy to get my Sofware Developer diploma.</p>
+                <div class="column_2">
+                    <h2>About Me</h2>
+                    <p>I'm currently working as a truck driver but looking to change careers and become a full stack software developer.<br>I'm currently training with The Tech Academy to get my Sofware Developer diploma.</p>
+                </div>
+            </div>
             </div>
         </div>
         <!-- About Me Section End -->
             
         <!-- GitHub Section Start -->
-        <div id="GitHub" class="row">
-            <div class="column_left"> 
-                <h2>GitHub</h2>
-                <p>You can check out my GitHub account<br><a href="https://github.com/Reilig35" target="_blank">here</a></p>
-            </div>
+        <div class="container">
+            <div class="row">
+                
+                    <div class="column_left" id="GitHub"> 
+                        <h2>GitHub</h2>
+                        <p>You can check out my GitHub account<br><a href="https://github.com/Reilig35" target="_blank">HERE</a></p>
+                    </div>
             
-            <div class="column_right">
-                <a href="https://github.com/Reilig35" target="_blank"><img src="images/github-logo.png" alt="GitHub"></a>
+                    <div class="column_right">
+                        <a href="https://github.com/Reilig35" target="_blank"><img src="images/github-logo.png" alt="GitHub"></a>
+                    </div>
             </div>
-            <!-- GitHub Section End -->
         </div>
+        <!-- GitHub Section End -->
+        
+        <!-- Contact Section Start-->
+        <div class="container" >
+            <div class="row">
+                <div class="column_a" id="AWS"> 
+                    <h3>AWS Solutions Architect Assosciate Certified</h3>
+                    <a href="https://www.youracclaim.com/badges/94778264-f319-4906-aa19-bbea12f45629/public_url" id="aws" target="blank"><img src="./images/aws-solutions-cert.png" alt="AWS Cerfificate"></a>
+                </div>
+            
+                <div class="column_b" id="Contact">
+                    <h3>Contact Us</h3>
+                    <form action="" method="POST">
+                        <label for="fname">First Name:</label><br>
+                        <input type="text" id="fname" name="fname" value="" required><br>
+                    
+                        <label for="lname">Last Name:</label><br>
+                        <input type="text" id="lname" name="lname" value="" required><br>
+                    
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" value="" required><br>
+                    
+                        <label for="messgae">Message:</label><br>
+                        <input type="text" id="messgae" name="message" value="" required><br>
+                    
+                        <input class="button" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section End-->
+        <!-- Footer Section Start-->
+        <footer>
+            <p class="bottom">&#169; Made by William Twomey 2021</p>
+        </footer>
         
         
-        </body>
+    </body>
     <!-- Body End-->
 </html>
