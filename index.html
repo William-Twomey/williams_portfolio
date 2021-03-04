@@ -28,42 +28,45 @@
         <!-- NAV Bar END -->
 
         <!-- Background Video Start -->
-        <div id="Home">
-            <video autoplay muted loop id="back-video">
-                <source src="./images/background-video.mp4" type="video/mp4">
-                Sorry your browser does not support HTML5 video
-            </video>
+        <div class="container-main">
+            <div id="Home">
+                <video autoplay muted loop id="back-video">
+                    <source src="./images/background-video.mp4" type="video/mp4">
+                    Sorry your browser does not support HTML5 video
+                </video>
         
-            <div class="content">
-                <img src="images/favicon_io/android-chrome-192x192.png" alt="logo">
-                <h1>Welcome to William Twomey's</h1>
-                <h1>Portfolio Website</h1>
-                <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+                <div class="content">
+                    <img src="images/favicon_io/android-chrome-192x192.png" alt="logo">
+                    <h1>Welcome to William Twomey's</h1>
+                    <h1>Portfolio Website</h1>
+                    <q><i>The computer programmer is a creator of universes for which he alone is the lawgiver.
                     <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
-                    <br>field of battle and to command such unswervingly dutiful actors or troops.
-                </q>
-                <br> -Joseph Weizenbaum
-                <br>
-                <br> My name is William. Welcome to my portfolio website. On it, I will tell you about my background and experience.
-                <br>
-                <br> Thank you for stopping by and enjoy!
+                    <br>field of battle and to command such unswervingly dutiful actors or troops.</i>
+                    </q>
+                    <br> -Joseph Weizenbaum
+                    <br>
+                    <br> My name is William. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br> Thank you for stopping by and enjoy!
+                </div>
             </div>
         </div>
         <!-- Background Video End -->
         
         <!-- About Me Section Start -->
         <div class="container">
-            <div id="About">
-            <div class="row">
-                <div class="column_1">
-                    <img src="./images/image1.jpg" alt="black and white laptop">
+                <div class="row">
+                    <div class="column_1">
+                        <img src="./images/image1.jpg" alt="black and white laptop">
+                    </div>
+                    
+                    
+                <div id="About">
+                    <div class="column_2">
+                        <h2>About Me</h2>
+                        <p>I'm currently working as a truck driver but looking to change careers and become a full stack software developer.<br>In Febuary of 2020 I passed my AWS Solutions Architech exam and want to learn more.<br>I'm currently training with The Tech Academy and Pitman Training to get my Advanced Sofware Developer diploma and a start in a challenging and exciting career as a software developer.</p>
+                    </div>
                 </div>
-                
-                <div class="column_2">
-                    <h2>About Me</h2>
-                    <p>I'm currently working as a truck driver but looking to change careers and become a full stack software developer.<br>I'm currently training with The Tech Academy to get my Sofware Developer diploma.</p>
-                </div>
-            </div>
             </div>
         </div>
         <!-- About Me Section End -->
@@ -74,7 +77,7 @@
                 
                     <div class="column_left" id="GitHub"> 
                         <h2>GitHub</h2>
-                        <p>You can check out my GitHub account<br><a href="https://github.com/Reilig35" target="_blank">HERE</a></p>
+                        <p>You can check out my GitHub account<br><a href="https://github.com/Reilig35" target="_blank">Here</a></p>
                     </div>
             
                     <div class="column_right">
@@ -94,18 +97,18 @@
             
                 <div class="column_b" id="Contact">
                     <h3>Contact Us</h3>
-                    <form action="" method="POST">
+                    <form action="https://formspree.io/f/mvovjlnp" method="POST">
                         <label for="fname">First Name:</label><br>
-                        <input type="text" id="fname" name="fname" value="" required><br>
+                        <input type="text" id="fname" name="fname" placeholder="Please enter your first name" required><br>
                     
                         <label for="lname">Last Name:</label><br>
-                        <input type="text" id="lname" name="lname" value="" required><br>
+                        <input type="text" id="lname" name="lname" placeholder="Please enter your surname" required><br>
                     
                         <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" value="" required><br>
+                        <input type="email" id="email" name="email" placeholder="Please enter your email address" required><br>
                     
                         <label for="messgae">Message:</label><br>
-                        <input type="text" id="messgae" name="message" value="" required><br>
+                        <input type="text" id="messgae" name="message" placeholder="Any feedback welcome" required><br>
                     
                         <input class="button" type="submit" value="Submit">
                     </form>

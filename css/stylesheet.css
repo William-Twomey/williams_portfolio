@@ -21,15 +21,13 @@ body {
     height: 2.5em;
 }
 
-.navbar img {
-    margin-left: 1em;
-}
+
 
 
 .navbar a {
     margin: 1em;
     color: #9564f5;
-    text-decoration: 0;
+    text-decoration: none;
     padding: 0.5em;
     border: 1px solid #f5f2b8;
     border-radius: 15px 50px;
@@ -46,12 +44,30 @@ body {
 
 /* Setting the style for the nav bar End*/
 
-/* Setting up the column layout */
 
 
 
+/* Main Start */
+#Home {
+    height: 45em;
+    width: auto;
+    display: block;
+}
 
+.background {
+    display: block;
+    height:auto;
+}
 
+q {
+    font-weight: 600;
+}
+
+.container-main {
+    width: 100%;
+    height: auto;
+    
+}
 
 #back-video {
     margin-top: 3.1em;
@@ -61,18 +77,22 @@ body {
 }
 
 .content {
-    z-index: -1;
-    height: 35em;
+    width: 100%;
+    height: auto;
     display: block;
-    margin-top: 10em;
-    padding-top: 10em;
-    bottom: 0;
+    overflow: hidden;
+    margin-top: 3.5em;
+    padding-top: 3em;
+    padding-bottom: 8.8em;
     text-align: center;
+    text-shadow: 2px 2px #8B4513;
     position: absolute;
     background: rgba(149, 100, 245, 0.5);
     color: #f1f1f1;
-    width: 100%;
+    
 }
+
+
 
 .content img {
     display: block;
@@ -81,39 +101,68 @@ body {
     
 }
 
+.content img:hover {
+transition: width 2s, height 2s, transform 2s;
+transform: rotate(360deg);
+}
+
 .content h1 {
     text-align: center;
 }
 
+/* Main End */
 
 
-.column_1 img {
-    width: 45em;
+
+/* Container */
+.container {
+    width: 100%;
+    display: block;
+    overflow: hidden;
 }
 
-
-
-.column_2 img {
-    padding-left: 5em;
+.Row:after {
+	content: "";
+	display: table; 
+	clear: both; 
 }
+/* Container */
 
-#Home {
-    height: 45em;
-    width: auto;
-}
 
+
+
+/* Column 1 End */
 
 .column_1 {
+    background-color: #9564f5;
     float: left;
     width: 50%;
     height: 30em;
 }
 
-.column_1 img{
-    width: 47.5em;
-    height: 30em;
+.column_1 img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding-top: 5%;
+    border-radius: 5em;
+    overflow: hidden;
 }
 
+.column_1 img:hover {
+    width: 100%;
+    padding-top: 0em;
+    transition-delay: 0.5s;
+    transition: width 3s;
+}
+
+/* Column 1 End */
+
+
+
+
+/* Column 2 Start */
 .column_2 {
     background-color: #c0a3f7;
     float: left;
@@ -122,13 +171,34 @@ body {
     height: 30em;
 }
 
+.column_2 img {
+    padding-left: 5em;
+}
+
 .column_2 h2 {
     margin-top: 2em;
-    text-decoration: underline;
+}
+
+.column_2 h2:hover {
+  transition: width 2s, height 2s, transform 2s;
+  transform: rotate(360deg);
 }
 .column_2 p {
     margin-top: 5em;
 }
+
+.column_2 p:hover {
+    font-weight: 800;
+    transition: ease-in 1.5s;
+}
+
+/* Column 2 End */
+
+
+
+
+
+/* Column Left Start */
 
 .column_left {
     width: 50%;
@@ -147,10 +217,14 @@ body {
     margin-top: 10em;
 }
 
+.column_left p:hover {
+    font-family: fantasy;
+}
+
 .column_left a {
     margin: 1em;
     color: #9564f5;
-    text-decoration: 0;
+    text-decoration: none;
     padding: 0.5em;
     border: 1px solid #000;
     border-radius: 15px 50px;
@@ -164,6 +238,12 @@ body {
     font-weight: bolder;
 }
 
+/* Column Left End */
+
+
+
+
+/* Column Right Start */
 .column_right {
     background-color: #9564f5;
     float: left;
@@ -172,19 +252,26 @@ body {
     height: 30em;
 }
 
+
 .column_right img {
     margin-top: 5em;
     width: 20em;
 }
 
 .column_right img:hover {
-    animation-delay: 1sec;
+    transition: width 2s, height 4s;
     margin-top: 2em;
     width: 25em;
     background-image: url("./image/github-logo.png")
     
 }
 
+/* Column Right End */
+
+
+
+
+/* Column A Start */
 .column_a {
     width: 50%;
     float: left;
@@ -192,6 +279,12 @@ body {
     background-color: #9564f5;
     text-align: center;
 }
+/* Column A End */
+
+
+
+
+/* Column B Start */
 
 .column_b {
     width: 50%;
@@ -199,37 +292,51 @@ body {
     height: 30em;
     background-color: #c0a3f7;
     text-align: center;
+    display: inline-block;
 }
 
-/* Form style atart */
-form {
-    margin-top: 6em;
-    margin-left: 5em;
-    text-align: left;
+.column_b h3 {
+    margin-top: 5em;
+    text-align: center;
 }
-form label {
+
+/* Column B End */
+
+
+
+
+/* Form style Start */
+form {
+    text-align: left;
+    display: inline-block;
+    
+}
+label {
+    text-align: center;
+    display: inline-block;
     color: #000;
     font-weight: 600;
-    margin-top: .5em;
-    padding-left: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.1em;
+   
 }
 
-form input{
+input{
     border: 2px solid #9564f5;
     border-radius: 10px;
-    width: 40em;
-    padding: .5em;
-    margin-left: 2.4em;
-    margin-top: .5em;
+    width: 30em;
+    padding: .5em
+  
 }
 
 .button {
-    width: 10em;
-    margin-left: 18em;
+    display: block;
+    width: 5em;
+    margin: auto;
     margin-top: 2em;
     font-weight: 700;
     color: #9564f5;
-    text-decoration: 0;
+    text-decoration: none;
     padding: 0.5em;
     border: 1px solid #000;
     border-radius: 15px 50px;
@@ -238,6 +345,8 @@ form input{
 }
 
 /* Form End*/
+
+
 
 /* Architect Section Start */
 
@@ -255,11 +364,14 @@ form input{
 }
 
 .column_a a img:hover {
+    transition: width 2s, height 4s;
     width: 20em;
     background-color: #5ce8f2;
 }
 
 /* Architect Section End */
+
+
 
 /* Footer Section Start */
 footer {
@@ -272,31 +384,43 @@ footer {
     line-height: 10em;
     text-align: center;
 }
-/* Footer Section Start */
+/* Footer Section End */
 
+
+
+/* Media Section Start */
 
 @media only screen and (max-width: 600px) {
 
     .navbar a {
         margin: 0;
         border: 1px solid black;
+        margin-left: 1em
     }
 
-    .content {
-        padding-bottom: 0;
-    }
     
     [class*="column_"] {
         width: 100%;
-        border-radius: none;
+        border-radius: 0px;
       }
-
+    
+    .content {
+        z-index: -1;
+        font-size: small;
+        height: 100%;
+    }
+    
     .row{
         font-size: 1em;
     }
     
     .column_1 img{
         width: 100%;
+        border-radius: 0em;
+        height: 75%;
+        position: absolute;
+        padding-top: 0em;
+        overflow: hidden;
     }
 
     .column_left {
@@ -307,22 +431,25 @@ footer {
         background-color: #c0a3f7;
     }
     
-    .column_right img{
-        width: 100%;
+    form {
+        text-align: center;
     }
-
-    form input{
-        width: 10em;
-        margin: 0;
+    
+    input{
+        width: 20em;
     }
 
     .button{
-        margin: 0;
+
     }
 
     footer {
         background-color: #9564f5;
     }
 }
+
+/* Media Section End */
+
+
 
 
