@@ -1,5 +1,9 @@
 /* Author: William Twomey */
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Setting the body style */
 body {
     margin: 0;
