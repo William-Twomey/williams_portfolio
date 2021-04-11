@@ -23,7 +23,6 @@
             <a class="active" href="#Home">Home</a>
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Contact</a>
         </div>
         <!-- NAV Bar END -->
 
@@ -52,13 +51,54 @@
             </div>
         </div>
         <!-- Background Video End -->
+        <!--Slideshow START-->
+        <div class="Slideshow-container">
+            <!-- Images with number and captions START-->
+            <div class="mySlides fade">
+                <div class="numbertext">1/3</div>
+                <img src="./images/the_tech_academy.jpg" style="width:40%">
+                <div class="slide-text">Currently enrolled in the Tech Academy Coding Bootcamp</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">1/3</div>
+                <img src="./images/aws-solutions-cert.png" style="width:30%">
+                <div class="slide-text">AWS Solutions Archetect Assosiate Certified</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">1/3</div>
+                <img src="./images/html_css_js.jpeg" style="width:40%">
+                <div class="slide-text">This site made with <span class="HTML5">HTML5</span>, <span class="Javascript">Javascript and <span class="CSS3">CSS3</span></span></div>
+            </div>
+            <!-- Images with number and captions END-->
+
+            <!--Next and Prev buttons START-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!--Next and Prev buttons END-->
+            <br>
+
+            <!--Dots Start-->
+            <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+
+
+
+        </div>
+        <!--Slideshow START-->
         
         <!-- About Me Section Start -->
-        <div class="container">
-                <div class="row">
-                    <div class="column_1">
-                        <img src="./images/image1.jpg" alt="black and white laptop">
-                    </div>
+        <div class="container" >
+            <div class="row">
+                <div class="column_a" id="AWS"> 
+                    <h3>AWS Solutions Architect Assosciate Certified</h3>
+                    <a href="https://www.youracclaim.com/badges/94778264-f319-4906-aa19-bbea12f45629/public_url" id="aws" target="blank"><img src="./images/aws-solutions-cert.png" alt="AWS Cerfificate"></a>
+                </div>
                     
                     
                 <div id="About">
@@ -88,40 +128,38 @@
         <!-- GitHub Section End -->
         
         <!-- Contact Section Start-->
-        <div class="container" >
-            <div class="row">
-                <div class="column_a" id="AWS"> 
-                    <h3>AWS Solutions Architect Assosciate Certified</h3>
-                    <a href="https://www.youracclaim.com/badges/94778264-f319-4906-aa19-bbea12f45629/public_url" id="aws" target="blank"><img src="./images/aws-solutions-cert.png" alt="AWS Cerfificate"></a>
-                </div>
-            
-                <div class="column_b" id="Contact">
-                    <h3>Contact Us</h3>
-                    <form action="https://formspree.io/f/mvovjlnp" method="POST">
-                        <label for="fname">First Name:</label><br>
-                        <input type="text" id="fname" name="fname" placeholder="Please enter your first name" required><br>
+        <button onclick="openForm()" class="open-button">Contact Us</button>
+        <div class="form-popup" id="myForm">
+            <form action="https://formspree.io/f/mvovjlnp" method="POST" class="form-container">
+                <h3>Contact</h3>
                     
-                        <label for="lname">Last Name:</label><br>
-                        <input type="text" id="lname" name="lname" placeholder="Please enter your surname" required><br>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Please enter your first name" required><br>
                     
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" placeholder="Please enter your email address" required><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Please enter your surname" required><br>
                     
-                        <label for="messgae">Message:</label><br>
-                        <input type="text" id="messgae" name="message" placeholder="Any feedback welcome" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Please enter your email address" required><br>
                     
-                        <input class="button" type="submit" value="Submit">
-                    </form>
-                </div>
-            </div>
+                <label for="messgae">Message:</label><br>
+                <input type="text" id="messgae" name="message" placeholder="Any feedback welcome" required><br>
+                    
+                        
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+                        
+            </form>
         </div>
+        
+        
 
         <!-- Contact Section End-->
         <!-- Footer Section Start-->
         <footer>
             <p class="bottom">&#169; Made by William Twomey 2021</p>
         </footer>
-        
+        <script src="./javascript/portfolio_js.js" defer></script>
         
     </body>
     <!-- Body End-->

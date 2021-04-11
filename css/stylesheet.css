@@ -15,7 +15,8 @@ body {
 /* Setting the style for the nav bar */
 .navbar {
     z-index: 9999;
-    padding-top: 1em;
+    padding-top: 2vw;
+    padding-bottom: 3.2vw;
     overflow: hidden;
     display: inline-block;
     background-color: #9564f5;
@@ -117,6 +118,110 @@ transform: rotate(360deg);
 
 /* Main End */
 
+/*Slideshow START*/
+*{box-sizing: border-box;}
+
+.Slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    background-color: #301934;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+
+.mySlides {
+    display: none;
+    margin: auto;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    text-align: center;
+    background-color: #c0a3f7;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 3vw;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+.prev:hover, .next:hover {
+    background-color: #FF6600;
+}
+
+.slide-text {
+    color: #FFD700;
+    font-size: 2vw;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #FFD700;
+    font-size: 1.5vw;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #FF6600;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.HTML5 {
+    color: #FF6600;
+}
+.CSS3 {
+    color: #264de4;
+}
+.Javascript{
+    color: #f0db4f;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/*Slideshow END*/
 
 
 /* Container */
@@ -287,38 +392,100 @@ transform: rotate(360deg);
 }
 /* Column A End */
 
-
-
-
-/* Column B Start */
-
-.column_b {
-    width: 50%;
-    float: left;
-    height: 30em;
-    background-color: #c0a3f7;
-    text-align: center;
-    display: inline-block;
-}
-
-.column_b h3 {
-    margin-top: 5em;
-    text-align: center;
-}
-
-/* Column B End */
-
-
-
-
 /* Form style Start */
-form {
-    text-align: left;
-    display: inline-block;
-    
+
+.form-container {
+    background-color: #c0a3f7;
+    width: 100%;
+    padding: .93vw;
+    margin: 0.6vw 0 0.6vw 0;
+    font-size: 1vw;
+    opacity: 0.95;
 }
+
+
+/*Has form hidden by default*/
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    z-index: 10;
+}
+
+.open-button {
+    display: block;
+    position: fixed;
+    right: 15px;
+    font-size: 2em;
+    width: 15vw;
+    bottom: 0.5em;
+    margin: auto;
+    margin-top: 5em;
+    font-weight: 700;
+    color: #9564f5;
+    text-decoration: none;
+    padding: 0.5em;
+    border: 1px solid #000;
+    border-radius: 15px;
+    background-color: #FFD700;
+    box-shadow: 2px 2px 2px #000;
+    opacity: 0.5;
+}
+
+button.open-button:hover {
+    opacity: 1;
+    width: 20vw;
+}
+
+button.btn-cancel {
+    margin-bottom: 0px;
+    display: inline-block;
+    width: 45%;
+    bottom: 3em;
+    margin-top: 2em;
+    margin-left: 2vw;
+    font-size: 1.5vw;
+    color: #FFD700;
+    text-decoration: none;
+    padding: 1em;
+    border: 1px solid #000;
+    border-radius: 15px;
+    background-color: #800000;
+    box-shadow: 5px 5px 5px #000;
+    opacity: 0.8;
+}
+
+.btn-cancel:hover {
+    background-color: #301934;
+}
+
+.btn {
+    margin-bottom: 0px;
+    display: inline-block;
+    width: 45%;
+    bottom: 3em;
+    margin-top: 2em;
+    padding-bottom: 2vw;
+    font-size: 1.5vw;
+    color: #9564f5;
+    text-decoration: none;
+    padding: 1em;
+    border: 1px solid #301934;
+    border-radius: 15px;
+    background-color: #FFD700;
+    box-shadow: 5px 5px 5px #000;
+    opacity: 0.8;
+}
+.btn:hover {
+    background-color: #000;
+    color: #FFD700;
+}
+
+
 label {
     text-align: center;
+    font-size: 1.5vw;
     display: inline-block;
     color: #000;
     font-weight: 600;
@@ -330,24 +497,15 @@ label {
 input{
     border: 2px solid #9564f5;
     border-radius: 10px;
-    width: 30em;
-    padding: .5em
+    width: 45em;
+    padding: 0.5em;
   
 }
 
-.button {
-    display: block;
-    width: 5em;
-    margin: auto;
-    margin-top: 2em;
-    font-weight: 700;
-    color: #9564f5;
-    text-decoration: none;
-    padding: 0.5em;
-    border: 1px solid #000;
-    border-radius: 15px 50px;
-    background-color: #FFD700;
-    box-shadow: 2px 2px 2px #000;
+.form-container h3 {
+    text-align: center;
+    font-size: 2.25vw;
+    padding-bottom: 1vw;
 }
 
 /* Form End*/
@@ -397,13 +555,68 @@ footer {
 /* Media Section Start */
 
 @media only screen and (max-width: 600px) {
-
+    .navbar {
+        padding-top: 1.5em;
+        padding-bottom: 3em;
+    }
     .navbar a {
-        margin: 0;
+        margin: 1vw;
+        padding-bottom: 3vw;
         border: 1px solid black;
         margin-left: 1em
     }
+    #myForm {
+        width: 120vw;
+        background-color: #9564f5;
+        margin-right: 0;
+    }
 
+    label {
+        font-size: 5vw;
+        text-align: left;
+    }
+
+    input {
+        margin-left: 15vw;
+
+    }
+    .btn {
+        font-size: large;
+        display: block;
+        margin-left: 40vw;
+        margin-bottom: 2vw;
+    }
+    button.btn-cancel {
+        font-size: large;
+        display: block;
+        text-align: center;
+        margin-left: 40vw;
+        margin-bottom: 3em;
+    }
+
+    .form-container h3 {
+        font-size: 10vw;
+        padding-top: 20vw;
+        padding-left: 25vw;
+        margin-top: 15vw;
+    }
+
+
+    .Slideshow-container{
+        display: none;
+    }
+
+    button.open-button {
+        width: 10em;
+        margin-right: 0.75em;
+    }
+
+    button.open-button:hover {
+        width: 10em;
+        margin-right: 0.75em;
+        opacity: 1;
+    }
+    
     
     [class*="column_"] {
         width: 100%;
@@ -439,9 +652,6 @@ footer {
         width: 20em;
     }
 
-    .button{
-
-    }
 
     footer {
         background-color: #9564f5;
